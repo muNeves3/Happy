@@ -39,6 +39,25 @@
     font-weight: 800;
 }
 
+#page-map .back-to-home {
+    width: 64px;
+    height: 64px;
+
+    background: #FFD666;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s all;
+}
+
+#page-map .back-to-home:hover {
+    background: #eec34c;
+    transform: scale(1.05, 1.05);
+}
+
 #page-map .leaflet-container {
     z-index: 5;
 }
@@ -69,3 +88,30 @@
     transform: scale(1.05, 1.05);
 }
 
+#page-map .dark-theme {
+    position: absolute;
+    top: 4%;
+
+    right: 40px;
+    bottom: 40px;
+
+    z-index: 10;
+
+    width: 64px;
+    height: 64px;
+
+    background: rgb(22, 22, 22);
+    border-radius: 20px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s all;
+}
+
+#page-map .dark-theme:hover {
+    background: rgb(211, 209, 209);
+    transform: scale(1.05, 1.05);
+}
