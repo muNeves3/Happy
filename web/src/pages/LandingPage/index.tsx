@@ -1,14 +1,16 @@
 import React from 'react';
-
+import { ContentWrapper, EnterApp, Location, LandingPageWrap } from './style';
 import { FiArrowRight } from "react-icons/fi";
-import { Link } from "react-router-dom"
 import logoImg from '../../Images/logo.svg';
-import './style.css';
 
-function LandingPage() {
+
+
+const LandingPage: React.FC = () => {
+
   return (
-    <div id="page-landing">
-     <div className="content-wrapper">
+    <LandingPageWrap>
+     <ContentWrapper>
+
         <img src={logoImg} alt="Happy"/>
 
         <main>
@@ -16,16 +18,16 @@ function LandingPage() {
             <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
 
-        <div className="location">
+        <Location>
             <strong>Londrina</strong>
             <span>Paraná</span>
 
-        </div>
-            <Link to="/map" className="enter-app">
-                <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)"/>
-            </Link>
-     </div>
-    </div>
+        </Location>
+            <EnterApp to="/map">
+                <FiArrowRight size={26} color="#1E1C1C"/>
+            </EnterApp>
+     </ContentWrapper>
+     </LandingPageWrap>
   );
 }
 
