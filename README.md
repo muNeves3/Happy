@@ -8,25 +8,25 @@ The app made in the third edition of Next-Level-Week, offered by rocketseat, aim
 ## :rocket: Technologies 
 
 ### FrontEnd/Web:
-  -Typescript
-  -ReactJS
-  -React-router-dom
-  -Styled-components
-  -React-Switch
-  -Leaflet
-  -Mapbox API
-  -Polished
+  - Typescript
+  - ReactJS
+  - React-router-dom
+  - Styled-components
+  - React-Switch
+  - Leaflet
+  - Mapbox API
+  - Polished
 
 ### Backend
-  -Typescript
-  -NodeJS
-  -Express
-  -SQlite
-  -TypeORM
-  -Multer
-  -Yup
-  -Express Async Erros
-  -Cors
+  - Typescript
+  - NodeJS
+  - Express
+  - SQlite
+  - TypeORM
+  - Multer
+  - Yup
+  - Express Async Erros
+  - Cors
 
 ## :notebook: Project parts  
 - [x] [Frontend](https://github.com/muNeves3/happy/tree/master/web)
