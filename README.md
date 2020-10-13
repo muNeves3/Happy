@@ -5,6 +5,10 @@
 ## :question: About the project
 The app made in the third edition of Next-Level-Week, offered by rocketseat, aims to make connections between orphanages and people who want to visit them
 
+## :rocket: Technologies 
+
+
+
 ## :notebook: Project parts  
 - [x] [Frontend](https://github.com/muNeves3/happy/tree/master/web)
 - [x] [Backend](https://github.com/muNeves3/happy/tree/master/backend)
