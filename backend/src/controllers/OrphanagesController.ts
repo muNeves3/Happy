@@ -79,5 +79,42 @@ export default {
         await orphanagesRepository.save(orphanage);
     
         return response.status(201).json(orphanage);
+    },
+
+    async update(request: Request, response: Response) {
+        const {
+            name,
+            latitude,
+            longitude,
+            about,
+            instructions,
+            opening_hours,
+            open_on_weekends
+        } = request.body;
+        const { id } = request.params
+
+        const orphanagesRepository = getRepository(Orphanage);
+
+        await orphanagesRepository.update(id,{
+            name,
+            latitude,
+            longitude,
+            about,
+            instructions,
+            opening_hours,
+            open_on_weekends
+        })
+
+        return response.status(201).json()
+    },
+
+    async delete(request: Request, response: Response) {
+        const { id } = request.params;
+
+        const orphanagesRepository = getRepository(Orphanage);
+
+        await orphanagesRepository.delete(id)
+
+        return response.status(201).json();
     }
 };
