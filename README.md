@@ -6,15 +6,27 @@
 The app made in the third edition of Next-Level-Week, offered by rocketseat, aims to make connections between orphanages and people who want to visit them
 
 ## :rocket: Technologies 
-<ul>
-  <l1>Typescript</li>
-  <l1>React</li>
-  <l1>Node</li>
-  <l1>Express</li>
-  <l1>SQlite</li>
-  <l1>TypeORM</li>
-  <l1>Multer</li>
-</ul>
+
+### FrontEnd/Web:
+  -Typescript
+  -ReactJS
+  -React-router-dom
+  -Styled-components
+  -React-Switch
+  -Leaflet
+  -Mapbox API
+  -Polished
+
+### Backend
+  -Typescript
+  -NodeJS
+  -Express
+  -SQlite
+  -TypeORM
+  -Multer
+  -Yup
+  -Express Async Erros
+  -Cors
 
 ## :notebook: Project parts  
 - [x] [Frontend](https://github.com/muNeves3/happy/tree/master/web)
