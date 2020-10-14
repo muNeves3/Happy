@@ -3,8 +3,6 @@ import { ContentWrapper, EnterApp, Location, LandingPageWrap } from './style';
 import { FiArrowRight } from "react-icons/fi";
 import logoImg from '../../Images/logo.svg';
 
-
-
 const LandingPage: React.FC = () => {
 
   return (

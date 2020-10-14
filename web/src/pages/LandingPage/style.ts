@@ -88,6 +88,6 @@ export const EnterApp = styled(Link)`
 
     &:hover {
         background:#0ABD92;
-        transform: scale(1.05, 1.05);
+        margin-bottom: 10px;
     }
 `

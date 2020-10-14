@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { Popup } from 'react-leaflet';
 
 export const PageMap = styled.div`
     width: 100vw;
@@ -22,13 +23,13 @@ export const PageMap = styled.div`
         font-weight: 800;
         line-height: 42px;
         margin-top: 64px;
-        ${props => props.theme.colors.text}
+        color: ${props => props.theme.colors.text}
     }
 
     aside p {
         line-height: 28px;
         margin-top: 24px;
-        ${props => props.theme.colors.text}
+        color: ${props => props.theme.colors.text}
     }
 
     aside footer {
@@ -40,13 +41,13 @@ export const PageMap = styled.div`
 
     aside footer strong {
         font-weight: 800;
-        ${props => props.theme.colors.text}
+        color: ${props => props.theme.colors.text}
     }
 
     .leaflet-container {
         z-index: 5;
     }
-`
+`;
 
 export const BackToHome = styled(Link)`
     
@@ -66,9 +67,9 @@ export const BackToHome = styled(Link)`
 
     &:hover {
         background: #0ABD92;
-        transform: scale(1.05, 1.05);
+        margin-bottom: 5px;
     }
-`
+`;
 
 export const CreateOrphanage = styled(Link)`
     position: absolute;
@@ -91,6 +92,43 @@ export const CreateOrphanage = styled(Link)`
     transition: .2s all;
     &:hover {
         background: #0ABD92;
-        transform: scale(1.05, 1.05);
+        margin-bottom: 10px;
     }
-`
+`;
+
+export const StyledPop = styled(Popup)`
+   
+    .leaflet-popup-content-wrapper {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        background: ${props => props.theme.colors.textColor};
+        box-shadow: none;
+    }
+
+    .leaflet-popup-content {
+        color: ${props => props.theme.colors.text};
+        font-size: 24px;
+        font-weight: bold;
+        margin: 8px 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leaflet-popup-content a{
+        width: 40px;
+        height: 40px;
+        background: ${props => props.theme.colors.text};
+        box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leaflet-popup-tip-container {
+        display: none;
+    }
+`;

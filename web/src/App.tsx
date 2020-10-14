@@ -2,7 +2,10 @@ import React from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 import usePersistedState from './utils/usePersistedState';
 import Switcher from './components/Switcher';
+
 import GlobalStyle from'./Styles/globalStyles';
+import "leaflet/dist/leaflet.css";
+
 import Routes from './routes';
 
 import light from './Styles/themes/light';

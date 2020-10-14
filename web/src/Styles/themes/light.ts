@@ -7,9 +7,10 @@ export default {
 
     colors: {
         primary: '#ee6123',
-        secondary: '#00916e',
+        secondary: '#fff',
 
         background: '#F3C705',
         text: '#00916e',
+        textColor: '#fff'
     }
 };
