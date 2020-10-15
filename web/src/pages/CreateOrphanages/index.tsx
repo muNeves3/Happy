@@ -63,6 +63,20 @@ const CreateOrphanage: React.FC = () => {
     setPreviewImages(selectedImagesPreview);
   }
 
+  function handleDeleteImages(index: number) {
+    const deletedImagesPreview = previewImages.filter(
+      (image, compareIndex) => index !== compareIndex
+    );
+
+    setPreviewImages(deletedImagesPreview);
+
+    const deletedImages = images.filter(
+      (image, compareIndex) => index !== compareIndex,
+    );
+
+    setImages(deletedImages);
+  }
+
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
@@ -152,11 +166,15 @@ const CreateOrphanage: React.FC = () => {
               <label htmlFor="images">Fotos</label>
 
               <ImagesContainer>
-                {previewImages.map((image, index) => {
+                {previewImages.map((imageUrl, index) => {
                   return (
-                    <>
-                      <img key={image} src={image} alt={name} id={`image`}/>
-                    </>
+                    <div key={imageUrl}>
+                      <img src={imageUrl} alt={name}/>
+
+                      <button type="button" onClick={() => handleDeleteImages(index)}>
+                        <FiX size={20} color="#F8659E"/>
+                      </button>
+                    </div>
                   );
                 })}
 

@@ -94,13 +94,34 @@ export const ImagesContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
 
-  img {
+  div img {
     width: 100%auto;
     height: 96px;
     object-fit: cover;
     border-radius: 20px;
   }
 
+  div {
+    position: relative;
+  }
+
+  div button {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 0 20px 0 20px;
+    border: 2px solid #D3E1E5;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
 `;
 
 export const NewImage = styled.label`
