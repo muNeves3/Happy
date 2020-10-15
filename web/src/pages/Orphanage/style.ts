@@ -85,34 +85,6 @@ export const OrphanageDetailsContent = styled.div`
     line-height: 46px;
     color: ${props => props.theme.colors.background};
   }
-
-  button.contact-button {
-    margin-top: 64px;
-
-    width: 100%;
-    height: 64px;
-    border: 0;
-    cursor: pointer;
-    background: #3cdc8c;
-    border-radius: 20px;
-    color: #ffffff;
-    font-weight: 800;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color 0.2s;
-  }
-
-  button.contact-button svg {
-    margin-right: 16px;
-  }
-
-  button.contact-button:hover {
-    background: #36CF82;
-  }
-
 `;
 
 export const MapContainer = styled.div`
@@ -169,8 +141,35 @@ export const OpenDetails = styled.div`
   }
 
   div.open-on-weekends.dont-open {
-    background: linear-gradient(154.16deg, #FDF0F5 7.85%, #ffffff 91.03%);
-    border: 1px solid #FFBCD4;
-    color: #FF669D;
+    background: linear-gradient(154.16deg, #fdf0f5 7.85%, #ffffff 91.03%);
+    border: 1px solid #ffbcd4;
+    color: #ff669d;
+  }
+`;
+
+export const ContactButton = styled.a`
+  margin-top: 64px;
+
+  width: 100%;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #3cdc8c;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+
+  svg {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background: #36cf82;
   }
 `;

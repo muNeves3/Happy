@@ -8,7 +8,7 @@ import Sidebar from "../../components/SideBar";
 import api from "../../services/api";
 import MapIcon from "../../utils/mapIcon";
 
-import { PageOrphanage, OrphanageDetails, Images, MapContainer, OpenDetails, OrphanageDetailsContent } from './style'
+import { PageOrphanage, OrphanageDetails, Images, MapContainer, OpenDetails, OrphanageDetailsContent, ContactButton} from './style'
 
 interface Orphanage {
   latitude: number;
@@ -18,6 +18,7 @@ interface Orphanage {
   instructions: string;
   opening_hours: string;
   open_on_weekends: string;
+  whatsapp: string;
   images: Array<{
     id:number,
     url: string;
@@ -124,10 +125,10 @@ export default function Orphanage() {
 
             </OpenDetails>
 
-            {/* <button type="button" className="contact-button">
+            <ContactButton target="_blank" rel="noopener noreferrer" href={`https://wa.me/${orphanage.whatsapp}`}>
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
-            </button> */}
+            </ContactButton> 
           </OrphanageDetailsContent>
         </OrphanageDetails>
       </main>

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const PageCreateOrphanage = styled.div`
   display: flex;
-
   main {
     flex: 1;
   }
@@ -49,6 +48,8 @@ export const PageCreateOrphanageForm = styled.form`
 `;
 
 export const InputBlock = styled.div`
+  
+
   label {
     color: ${props => props.theme.colors.background};
   }
@@ -90,7 +91,7 @@ export const InputBlock = styled.div`
 
 export const ImagesContainer = styled.div`
   display : grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
 
   img {
@@ -99,6 +100,7 @@ export const ImagesContainer = styled.div`
     object-fit: cover;
     border-radius: 20px;
   }
+
 `;
 
 export const NewImage = styled.label`
@@ -168,3 +170,18 @@ export const ConfirmButton = styled.button`
     }
 `
 
+export const DeleteButton = styled.button`
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+`;
+
+export const ImageWrapper = styled.div`
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+`
