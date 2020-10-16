@@ -4,11 +4,11 @@
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/images/Logo.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/images/Logotipo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#15C3D6"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

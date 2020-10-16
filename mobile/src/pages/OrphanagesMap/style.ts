@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
     flex: 1;
@@ -43,7 +44,7 @@ export const FooterText = styled.Text`
     color: #8fa7b3;
 `;
 
-export const CreateOrphanageButton = styled.TouchableOpacity`
+export const CreateOrphanageButton = styled(RectButton)`
     width: 56px;
     height: 56px;
     background-color: #0EE3DC;
