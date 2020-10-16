@@ -31,7 +31,7 @@ The app made in the third edition of Next-Level-Week, offered by rocketseat, aim
 ## :notebook: Project parts  
 - [x] [Frontend](https://github.com/muNeves3/happy/tree/master/web)
 - [x] [Backend](https://github.com/muNeves3/happy/tree/master/backend)
-- [x] [Mobile]()
+- [x] [Mobile](https://github.com/muNeves3/happy/tree/master/mobile)
 
 ## :computer: Author
 <table>
